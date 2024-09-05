@@ -1,11 +1,14 @@
 # AdaptiveSpring
-This repo contains code and other supplementary materials for the paper **Optimizing energy consumption in cyclic tasks by adapting equilibrium position of a parallel torsion spring** submitted to IEEE ROBIO 2024 Conference.
+This repo contains code and other supplementary materials for the paper **Optimizing energy consumption for legged robot in cyclic tasks by
+adapting equilibrium position and stiffness of a parallel torsion spring** submitted to IEEE ROBIO 2024 Conference.
 
 In this work, we propose a novel adaptive compliance mechanism that utilizes a torsion spring with a variable equilibrium position. This mechanism is designed to optimize energy consumption by adjusting the spring’s influence on the robot’s leg based on real-time load conditions. The adaptive mechanism has been integrated into the knee joint of a quadrupedal robot leg with three degrees of freedom, providing a dynamic response to changing terrains and tasks.
 
-File energy.ipynb consists general formulation of energy consumption of the knee motor of robotic leg with and without torsion spring, and equation for optimal equilibrium position.
+File `energy.ipynb` consists general formulation of energy consumption of the knee motor of robotic leg with and without torsion spring, and equation for optimal equilibrium position.
 
-File Adaptiv_spring_ws.zip is ROS workspace with implementation of robotic leg with torsion spring parallel to knee joint in Gazebo simulator. Cyclic jumps of the leg are simulated and data (torques, angles and position of knee joint) is collected to .csv file while sumilation is running. Your can find our experimental results and it's analysis in experiments folder in the root of workspace.
+`Simulation/Adaptive_spring_ws.zip` is ROS workspace with implementation of robotic leg with torsion spring parallel to knee joint in Gazebo simulator. 
+
+Your can find our experimental results and it's analysis in `Simulation/results.zip` archive. Experimantal setup and methodology are described in our paper.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -18,11 +21,11 @@ Sumilation was tested on ROS Noetic Ubuntu 20.04 with Python 3.8.
 
 ### Installation
 
-1. Download and unpack Adaptiv_spring_ws.zip archive with simulation workspace.
+1. Download and unpack `Simulation/Adaptive_spring_ws.zip` archive with simulation workspace.
 2. Source your ROS distro.
 3. Build the workspace:
 ```sh
-cd Adaptiv_spring_ws
+cd Adaptive_spring_ws
 catkin_make
 ```
 
@@ -35,13 +38,13 @@ catkin_make
 
 1. In first terminal:
 ```sh
-cd Adaptiv_spring_ws
+cd Adaptive_spring_ws
 source devel/setup.bash
 roslaunch leg_utils controller.launch
 ```
 2. In second terminal:
 ```sh
-cd Adaptiv_spring_ws
+cd Adaptive_spring_ws
 source devel/setup.bash
 rosrun leg_controller start_control.py
 ```
@@ -50,7 +53,7 @@ After few seconds 'Saved' message will be printed, .csv file with knee torques, 
 
 To configure parameters of the spring:
 ```sh
-cd Adaptiv_spring_ws/src/standurdf_description/urdf
+cd Adaptive_spring_ws/src/standurdf_description/urdf
 ```
 In file standurdf.gazebo you can edit knee_joint_torsional_spring plugin to change spring stiffness and twist angle.
 
