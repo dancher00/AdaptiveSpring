@@ -5,7 +5,7 @@ adapting equilibrium position and stiffness of a parallel torsion spring** submi
 
 In this work, we propose a novel adaptive compliance mechanism that utilizes a torsion spring with a variable equilibrium position. This mechanism is designed to optimize energy consumption by adjusting the spring’s influence on the robot’s leg based on real-time load conditions. The adaptive mechanism has been integrated into the knee joint of a quadrupedal robot leg with three degrees of freedom, providing a dynamic response to changing terrains and tasks.
 
-<img src="https://github.com/dancher00/AdaptiveSpring/blob/main/stand.jpg" alt="Testing setup" width="500"/>
+<img src="https://github.com/dancher00/AdaptiveSpring/blob/main/stand.jpg" alt="Testing setup" hight="1000" width="500"/>
 
 File `energy.ipynb` consists general formulation of energy consumption of the knee motor of robotic leg with and without torsion spring, and equation for optimal equilibrium position.
 
