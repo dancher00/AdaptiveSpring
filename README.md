@@ -1,6 +1,6 @@
 # AdaptiveSpring
 
-![Testing setup](https://github.com/dancher00/AdaptiveSpring/stand.jpg)
+![Testing setup](https://github.com/dancher00/AdaptiveSpring/blob/main/stand.jpg)
 
 This repo contains code and other supplementary materials for the paper **Optimizing energy consumption for legged robot in cyclic tasks by
 adapting equilibrium position and stiffness of a parallel torsion spring** submitted to IEEE ROBIO 2024 Conference.
