@@ -3,6 +3,8 @@
 This repo contains code and other supplementary materials for the paper **Optimizing energy consumption for legged robot in cyclic tasks by
 adapting equilibrium position and stiffness of a parallel torsion spring** submitted to IEEE ROBIO 2024 Conference.
 
+![Principle of Torque Compensation of Parallel Torsion Spring](demo.png)
+
 In this work, we propose a novel adaptive compliance mechanism that utilizes a torsion spring with a variable equilibrium position. This mechanism is designed to optimize energy consumption by adjusting the spring’s influence on the robot’s leg based on real-time load conditions. The adaptive mechanism has been integrated into the knee joint of a quadrupedal robot leg with three degrees of freedom, providing a dynamic response to changing terrains and tasks.
 
 
