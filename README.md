@@ -64,12 +64,19 @@ In file standurdf.gazebo you can edit knee_joint_torsional_spring plugin to chan
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE -->
-## License
+## Citation
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Please cite the following if you found our work useful:
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```
+@article{belov2024optimizing,
+  title={Optimizing energy consumption for legged robot by adapting equilibrium position and stiffness of a parallel torsion spring},
+  author={Belov, Danil and Erkhov, Artem and Khabibullin, Farit and Pestova, Elisaveta and Satsevich, Sergei and Osokin, Ilya and Osinenko, Pavel and Tsetserukou, Dzmitry},
+  journal={arXiv preprint arXiv:2411.18295},
+  year={2024}
+}
+
+```
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
